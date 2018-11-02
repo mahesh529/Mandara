@@ -1,0 +1,121 @@
+<app-breadcrumb></app-breadcrumb>
+<div>     
+    <header>
+      <div class="float-left">
+          <i class="fa fa-file-text-o fa-lg report-icon"></i>
+          <span>Analysis Reports</span>
+      </div>
+      <div class="float-right">
+          <div class="form-group float-left">
+              <input #search autofocus  type="input" (blur)="toggleSearch()" *ngIf="showSearch" class="form-control" placeholder="Search..">
+              <i class="fa fa-search"  *ngIf="!showSearch" (click)="toggleSearch()" aria-hidden="true"></i>
+          </div>          
+          <i class="fa fa-filter" (click)="getFilterOptions()" title="Filter"></i>
+          <i class="fa fa-refresh" (click)="refreshAnalysisTable()" title="Refresh"></i>
+      </div>
+    </header>    
+    <div  class="table-responsive-sm">
+      <table class="table table-hover  border shadow-sm">
+        <thead class="thead-light">						
+          <tr>
+            <th>Sample Id</th>
+            <th>Description</th>
+            <th>Submitted By</th>
+            <th>Installation</th>
+            <th>Submitted At</th>
+            <th>Reviewer</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Anna</td>
+            <td>Pitt</td>
+            <td>35</td>
+            <td>New York</td>
+            <td>
+               USA
+            </td>
+            <td>
+                Female               
+            </td>       
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Anna</td>
+              <td>Pitt</td>
+              <td>35</td>
+              <td>New York</td>
+              <td>USA</td>
+              <td>Female</td>       
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Anna</td>
+              <td>Pitt</td>
+              <td>35</td>
+              <td>New York</td>
+              <td>USA</td>
+              <td>Female</td>       
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Anna</td>
+              <td>Pitt</td>
+              <td>35</td>
+              <td>New York</td>
+              <td>USA</td>
+              <td>Female</td>       
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Anna</td>
+              <td>Pitt</td>
+              <td>35</td>
+              <td>New York</td>
+              <td>USA</td>
+              <td>Female</td>       
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Anna</td>
+              <td>Pitt</td>
+              <td>35</td>
+              <td>New York</td>
+              <td>USA</td>
+              <td>Female</td>       
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Anna</td>
+              <td>Pitt</td>
+              <td>35</td>
+              <td>New York</td>
+              <td>USA</td>
+              <td>Female</td>       
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Anna</td>
+              <td>Pitt</td>
+              <td>35</td>
+              <td>New York</td>
+              <td>USA</td>
+              <td>Female</td>       
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+    <footer>
+       <ul>
+         <li><i class="success-legend circle-legend"></i>Success</li>
+         <li><i class="failure-legend circle-legend"></i>Failure</li>
+         <li><i class="progress-legend circle-legend"></i>In Progress</li>
+         <li><i class="fa fa-check"></i>Approved</li>
+         <li><i class="fa fa-times"></i>Failure</li>
+         <li><i class="fa fa-user-times"></i>Un Assigned</li>
+         <li><i class="fa fa-exclamation-circle"></i>Pending</li>
+       </ul>
+    </footer>
+  </div>

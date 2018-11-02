@@ -1,0 +1,6 @@
+
+    <ol class="breadcrumb">
+      <li  *ngFor="let segment of pathArray;index as i">
+          <a routerLink='{{["/"+segment]}}' routerLinkActive="active">{{(i>0?'/':'')+segment.split('/')[i]}}</a>
+      </li> 
+    </ol>

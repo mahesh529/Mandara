@@ -1,0 +1,7 @@
+{
+    "/api":{
+        "target": "https://xenon.sigtuple.com/mandara",
+        "secure": false,
+        "changeOrigin": true
+    }
+}

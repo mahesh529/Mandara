@@ -1,0 +1,16 @@
+.breadcrumb{
+    padding: 0;
+    margin-top: 1rem;    
+    display: inline-block;
+    a{
+        color:  rgb(221, 75, 57);
+    }
+    a:last-of-type{
+        color: black;   
+        cursor:default;    
+    }
+    a:last-of-type:hover{
+            text-decoration: none;
+            pointer-events: none;        
+    }
+}

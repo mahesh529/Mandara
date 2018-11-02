@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+@import "_variables.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss"; 
+
+.circle-legend{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    display: inline-block;
+}
+.success-legend{
+    background-color: green;
+}
+.failure-legend{
+    background-color:$dark;
+}
+.progress-legend{
+    background-color: #f0ce10;
+}
